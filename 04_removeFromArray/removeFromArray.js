@@ -8,7 +8,7 @@ const removeFromArray = function() {
     }
 
     for (inputIndex = 0; inputIndex < inputArr.length; inputIndex++){
-        found = false; // make index marker
+        found = false; // Make index marker
         for (remIndex = 0; remIndex < removeArr.length; remIndex++){ 
             if (!found){ 
                 if (inputArr[inputIndex] === removeArr[remIndex]){
