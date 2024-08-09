@@ -13,7 +13,7 @@ const removeFromArray = function() {
             if (!found){ 
                 if (inputArr[inputIndex] === removeArr[remIndex]){
                     indices.push(inputIndex); // Record index of number to be removed
-                    found = true; // Marks number as found
+                    found = true; // Marks number as found so additional instances of the item won't be recorded
                 }
             }
         }
@@ -21,7 +21,7 @@ const removeFromArray = function() {
     indices.reverse();
     console.log(indices);
 
-    for (i = 0; i < indices.length; i++){ // for each index
+    for (i = 0; i < indices.length; i++){ // Iterate through each index to remove the element from the array
         inputArr.splice(indices[i], 1);
     }
 
